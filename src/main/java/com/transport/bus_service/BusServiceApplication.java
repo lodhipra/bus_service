@@ -1,4 +1,4 @@
-package com.mailer.bulkmailer;
+package com.transport.bus_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
