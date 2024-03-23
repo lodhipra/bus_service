@@ -1,6 +1,7 @@
 package com.transport.bus_service.entity;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "busDetail")
@@ -21,6 +22,12 @@ public class BusDetail {
     @ManyToOne
     @JoinColumn(name="destination_id", nullable=false)
     private BusStop destination;
+
+    @Column(name = "journey", nullable = false)
+    private LocalDateTime journey;
+
+    @Column(name = "passengers", nullable = false)
+    private LocalDateTime passengers;
 
 
 }
