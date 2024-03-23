@@ -8,15 +8,14 @@
 		<version>2.7.18</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.mailer</groupId>
-	<artifactId>bulkmailer</artifactId>
+	<groupId>com.bus_service</groupId>
+	<artifactId>busService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bulkmailer</name>
-	<description>Bulkmailer project for Spring Boot</description>
+	<name>bus_service</name>
+	<description>Bus SErvice for Ticket Booking</description>
 	<properties>
 		<java.version>11</java.version>
-		<jwtToken.version>0.11.5</jwtToken.version>
-		<docker.image.name>bulkMailer</docker.image.name>
+		<docker.image.name>bus_service</docker.image.name>
 	</properties>
 
 	<dependencyManagement>
@@ -33,10 +32,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -81,29 +76,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.dataformat</groupId>
-			<artifactId>jackson-dataformat-xml</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-api</artifactId>
-			<version>${jwtToken.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-impl</artifactId>
-			<version>${jwtToken.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-jackson</artifactId> <!-- or jjwt-gson if Gson is preferred -->
-			<version>${jwtToken.version}</version>
-			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
