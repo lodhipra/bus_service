@@ -1,6 +1,5 @@
 package com.transport.bus_service.controller;
 
-import com.transport.bus_service.model.request.RegistrationRequest;
 import com.transport.bus_service.model.response.RegistrationResponse;
 import com.transport.bus_service.service.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Map;
-import java.util.Set;
 
 @Controller
 public class RegistrationController {

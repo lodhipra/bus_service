@@ -2,6 +2,7 @@ package com.transport.bus_service.entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "busDetail")
@@ -29,5 +30,7 @@ public class BusDetail {
     @Column(name = "passengers", nullable = false)
     private LocalDateTime passengers;
 
-
+    @ManyToMany
+    @JoinColumn(name="stops", nullable=false)
+    private List<BusStop> stops;
 }
