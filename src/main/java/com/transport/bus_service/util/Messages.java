@@ -10,9 +10,8 @@ public enum Messages {
     UPDATE_RECORD_SUCCESSFUL("Update record Successful"),
     COULD_NOT_UPDATE_RECORD("Could not update record"),
     COULD_NOT_DELETE_RECORD("Could not delete record"),
-    EMAIL_ADDRESS_NOT_VERIFIED("Email address could not be verified"),
     REGISTRATION_ERROR("Error in Registration , Please Try Again or Call for Support"),
-    REGISTRATION_SUCCESSFUL("You have successfully REgisterd need to Pay Registration Fee to successfully confirm Registration.");
+    REGISTRATION_SUCCESSFUL("You have successfully Registerd");
     
 
     private String message;

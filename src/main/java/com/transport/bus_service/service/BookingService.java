@@ -1,4 +1,4 @@
 package com.transport.bus_service.service;
 
-public class BookingService {
+public interface BookingService {
 }
